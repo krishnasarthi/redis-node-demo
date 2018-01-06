@@ -34,7 +34,6 @@ class RedisManager {
 
     async getUser(key) {
         let user = await this.client.getAsync(key);
-
         return user;
     }
 
